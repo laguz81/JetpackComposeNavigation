@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.ecticsoft.jetpackcomposenavigation.screens.FirstScreen
+import com.ecticsoft.jetpackcomposenavigation.screens.navigation.AppNavigation
 import com.ecticsoft.jetpackcomposenavigation.ui.theme.JetpackComposeNavigationTheme
 
 class MainActivity : ComponentActivity() {
@@ -23,7 +24,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    FirstScreen()
+                    AppNavigation()
                 }
             }
         }
@@ -34,6 +35,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun DefaultPreview(){
     JetpackComposeNavigationTheme {
-        FirstScreen()
+        AppNavigation()
     }
 }
